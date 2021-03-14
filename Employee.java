@@ -38,23 +38,22 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "EmployeeDemo [employeeId=" + employeeId + ", Name=" + this.getFullName() + ", role=" + role + "]";
+		return "EmployeeDemo [employeeId = " + employeeId + ", Name = " + this.getFullName() + ", role = " + role + "]";
 	}
 	
-	public Employee hireEmployee() {
-		Employee interviewEmployee = new Employee(3, "Sirajo", "Zainab", 1200.06, "5 - 9", true, true, Role.LEAD, Gender.FEMALE);
-		return interviewEmployee;
+	public void hireEmployee() {
+		
 	}
 	
 	public void fireEmployee() {
-		isActive = false;
+		boolean isActive = false;
 	}
 	
 	public void setWorkHour() {
-		this.workHours = "6 - 10";
+		workHours = "6 - 10";
 	}
 	public void promoteEmployee() {
-		this.role = Role.PRESIDENT;
+		Role role = Role.PRESIDENT;
 	}
 	
 	public void paySalary() {
